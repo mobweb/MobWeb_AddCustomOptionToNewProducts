@@ -18,7 +18,7 @@ Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
 $option = array(
     'title' => 'My Custom Option Title',
     'type' => 'checkbox',
-    'is_require' => 1,
+    'is_require' => 0,
     'values' => array(
         array(
             'title' => 'Yes, please',

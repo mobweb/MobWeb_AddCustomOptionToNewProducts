@@ -18,7 +18,7 @@ class MobWeb_AddCustomOptionToNewProducts_Model_Observer
 		$option = array(
 		    'title' => 'My Custom Option Title',
 		    'type' => 'checkbox',
-		    'is_require' => 1,
+		    'is_require' => 0,
 		    'values' => array(
 		    	array(
 			    	'title' => 'Yes, please',
