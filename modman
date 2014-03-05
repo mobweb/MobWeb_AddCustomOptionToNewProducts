@@ -1,0 +1,6 @@
+app/code/local/MobWeb/AddCustomOptionToNewProducts app/code/local/MobWeb/AddCustomOptionToNewProducts/
+
+app/etc/modules/MobWeb_AddCustomOptionToNewProducts.xml app/etc/modules/MobWeb_AddCustomOptionToNewProducts.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

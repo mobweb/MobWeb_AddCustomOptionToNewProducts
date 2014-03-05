@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_AddCustomOptionToNewProducts>
+            <version>0.1.0</version>
+        </MobWeb_AddCustomOptionToNewProducts>
+    </modules>
+    <global>
+        <models>
+            <addcustomoptiontonewproducts>
+                <class>MobWeb_AddCustomOptionToNewProducts_Model</class>
+            </addcustomoptiontonewproducts>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <catalog_product_save_before>
+                <observers>
+                    <addcustomoptiontonewproducts>
+                        <type>singleton</type>
+                        <class>addcustomoptiontonewproducts/observer</class>
+                        <method>catalogProductSaveBefore</method>
+                    </addcustomoptiontonewproducts>
+                </observers>
+            </catalog_product_save_before>
+        </events>
+    </adminhtml>
+</config>
